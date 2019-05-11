@@ -15,21 +15,21 @@ public class StartCars {
           int speedUp, 
           int delay) {
     Car car = new Car();
-    car.number = number;
+    car.setNumber(number);
     car.setMaxSpeed(maxSpeedInKmPerHour);
-    car.speedUp = speedUp;
-    car.delay = delay;
+    car.setSpeedUp(speedUp);
+    car.setDelay(delay);
     return car;
   }
 
   private static void operate(Car car) {
     for (int i = 0; i < 10; i++) {
       car.accelerate(2);
-      System.out.println("Current speed (" + car.number + "): " + car.getCurrentSpeed());
+      System.out.println("Current speed (" + car.getNumber() + "): " + car.getCurrentSpeed());
     }
     for (int i = 0; i < 5; i++) {
       car.delay(2);
-      System.out.println("Current speed (" + car.number + "): " + car.getCurrentSpeed());
+      System.out.println("Current speed (" + car.getNumber() + "): " + car.getCurrentSpeed());
     }
   }
 

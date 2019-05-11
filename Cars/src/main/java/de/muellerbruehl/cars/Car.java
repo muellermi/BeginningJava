@@ -2,10 +2,38 @@ package de.muellerbruehl.cars;
 
 public class Car {
 
-  public int number;
+  //<editor-fold defaultstate="collapsed" desc="Number">
+  private int number;
+  public int getNumber() {
+    return number;
+  }
+  
+  public void setNumber(int number) {
+    this.number = number;
+  }
+  //</editor-fold>
+  
   private int maxSpeed;
-  public int speedUp;
-  public int delay;
+  public int getSpeedUp() {
+    return speedUp;
+  }
+
+  public void setSpeedUp(int speedUp) {
+    this.speedUp = speedUp;
+  }
+  //</editor-fold>
+
+  private int delay;
+  public int getDelay() {
+    return delay;
+  }
+
+  public void setDelay(int delay) {
+    this.delay = delay;
+  }
+  //</editor-fold>
+
+  private int speedUp;
   private int currentSpeed;
 
   public int getCurrentSpeed() {
